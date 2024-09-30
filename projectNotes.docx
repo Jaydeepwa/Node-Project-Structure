@@ -1,0 +1,23 @@
+# Node Project SetUp
+  npm init (default use npm init -y)
+
+# TypeScript SetUp
+   npm i typescript
+   npm i ts-node
+   
+   npx tsc --init
+
+# Eslint SetUp
+  npm install eslint
+  npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+
+# Swagger SetUp
+  npm i swagger-ui-express
+  npm i -D @types/swagger-ui-express --save
+
+
+
+# npm i body-parser cors dotenv express joi moment nodemon winston jsonwebtoken mongoose
+# npm i -D @types/body-parser @types/cors @types/express @types/jsonwebtoken @types/mongoose --save
+
+* Also refer package.json
