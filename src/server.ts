@@ -30,6 +30,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/api/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerJson));
 app.use("/api/v1", indexRouter);
 
+app.get('/', (req: Request, res: Response) => {
+    res.status(200).json({ message: "Express Server" })
+})
+
 app.use((error: any, req: Request, res: Response, next: NextFunction) => {
     const message = process.env.NODE_ENV === "development" ? error.message : Message.UNEXPECTED_ERROR;
     sendJsonResponse(res, StatusCodes.INTERNAL_SERVER_ERROR, [], false, message, JSON.stringify(error));
